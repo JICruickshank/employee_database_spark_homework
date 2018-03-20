@@ -12,7 +12,7 @@
 
         #foreach($department in $departments)
         <tr>
-            <td>$department.title</td>
+            <td><a href="/departments/$department.id">$department.title</a></td>
         </tr>
         #end
     </table>
