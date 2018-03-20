@@ -11,8 +11,8 @@
 
     #foreach($employee in $employees)
         <tr>
-            <td>$employee.firstName</td>
-            <td>$employee.getLastName()</td>
+            <td><a href="/employees/$employee.id">$employee.firstName</a></td>
+            <td><a href="/employees/$employee.id">$employee.lastName</a></td>
             <td>$employee.getSalary()</td>
             <td>$employee.getDepartment().getTitle()</td>
         </tr>

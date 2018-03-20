@@ -1,0 +1,23 @@
+<p class="pageHeader">Employee</p>
+
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Department</th>
+    </tr>
+    <tr>
+        <td>$employee.firstName</td>
+        <td>$employee.lastName</td>
+        <td>$employee.salary</td>
+        <td>$employee.department.getTitle()</td>
+    </tr>
+</table>
+
+<form action="/employees/$employee.id/delete" method="post">
+    <input type="submit" value="Delete?">
+
+</form>
+
